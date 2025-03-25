@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./asset/logo/zando-logo-small.png" type="image/x-icon">
+    <title>ZANDO - Responsive Navbar</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Mobile Menu Overlay (Hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 z-[60] hidden">
+        <div class="w-64 h-full bg-white absolute left-0 top-0 p-6 transform transition-transform duration-300 ease-in-out" id="mobile-menu-content">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Mobile Navigation Links -->
+            <ul class="space-y-4 mt-12 text-black font-medium">
+                <li><a href="#" class="block py-2 hover:text-red-600 transition">WOMEN</a></li>
+                <li><a href="#" class="block py-2 hover:text-red-600 transition">MEN</a></li>
+                <li><a href="#" class="block py-2 hover:text-red-600 transition">BOYS</a></li>
+                <li><a href="#" class="block py-2 hover:text-red-600 transition">GIRLS</a></li>
+            </ul>
+            
+            <!-- Mobile Auth Links -->
+            <div class="mt-6 space-y-4 font-medium text-sm">
+                <a href="#" class="block py-2 hover:text-red-600 transition">LOGIN</a>
+                <a href="#" class="block py-2 hover:text-red-600 transition">REGISTER</a>
+            </div>
+            
+            <!-- Mobile Search -->
+            <div class="mt-6">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        placeholder="Search Zando" 
+                        class="w-full p-2 pl-10 border border-gray-300 rounded-full 
+                               focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent 
+                               text-sm text-gray-700 placeholder-gray-400 transition-all duration-300"
+                    />
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="20" 
+                        height="20" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white w-full h-16 md:h-20 flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-10 shadow-md sticky top-0 z-50">
+        <!-- Mobile Menu Button (visible on mobile) -->
+        <button id="mobile-menu-toggle" class="md:hidden text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        
+        <!-- Navigation Links (hidden on mobile) -->
+        <ul class="hidden md:flex space-x-3 lg:space-x-5 text-black font-medium md:text-sm lg:text-base xl:text-lg">
+            <li><a href="#" class="hover:text-red-600 transition">WOMEN</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">MEN</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">BOYS</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">GIRLS</a></li>
+        </ul>
+        
+        <!-- Logo -->
+        <div class="logo w-28 md:w-32 lg:w-44 mx-auto md:ml-20 sm:ml-60 sm:w-34 xl:ml-60">
+            <a href="#">
+                <img src="./asset/logo/zando-logo-small.png" alt="Zando Logo" class="w-full h-auto">
+            </a>
+        </div>
+        
+        <!-- Search Bar and Icons -->
+        <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5">
+            <!-- Search Bar (hidden on mobile) -->
+            <div class="relative hidden sm:block px-4">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        placeholder="Search" 
+                        class="w-32 md:w-40 lg:w-48 p-2 pl-10 border border-gray-300 rounded-full 
+                               focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent 
+                               text-sm text-gray-700 placeholder-gray-400 transition-all duration-300 
+                               hover:border-gray-400"
+                    />
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="20" 
+                        height="20" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Icons -->
+            <div class="flex space-x-2 sm:space-x-3 md:space-x-4 text-gray-600">
+                <a href="#" class="p-1 hover:text-red-600 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </a>
+                <a href="#" class="p-1 hover:text-red-600 transition">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </a>
+                <a href="#" class="p-1 hover:text-red-600 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18H5l-1-7h12l-1 7z"></path>
+                        <circle cx="7" cy="21" r="1"></circle>
+                        <circle cx="17" cy="21" r="1"></circle>
+                        <path d="M7 10V7a5 5 0 0 1 10 0v3"></path>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Auth Links (hidden on mobile) -->
+            <div class="hidden md:flex space-x-3 lg:space-x-4 font-medium text-sm lg:text-base">
+                <a href="#" class="hover:text-red-600 transition">LOGIN</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="hover:text-red-600 transition">REGISTER</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-64 sm:h-80 md:h-96 lg:h-screen overflow-hidden">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/asset/slide-show/lifetsyle.w.png" class="absolute block w-full h-full object-cover" alt="Lifestyle">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <div class="text-center text-white px-4">
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Summer Collection</h2>
+                        <p class="text-sm sm:text-base md:text-lg mb-4">Discover our new arrivals</p>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/asset/slide-show/sportlife.m.png" class="absolute block w-full h-full object-cover" alt="Sport Life">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <div class="text-center text-white px-4">
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Sports Wear</h2>
+                        <p class="text-sm sm:text-base md:text-lg mb-4">Performance meets style</p>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/asset/slide-show/man.png" class="absolute block w-full h-full object-cover" alt="Men's Fashion">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <div class="text-center text-white px-4">
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Men's Collection</h2>
+                        <p class="text-sm sm:text-base md:text-lg mb-4">Trending this season</p>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-1/2 left-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-prev>
+            <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+        </button>
+        <button type="button" class="absolute top-1/2 right-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-next>
+            <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuContent.classList.add('translate-x-0');
+            }, 10);
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenuContent.classList.remove('translate-x-0');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        });
+
+        // Carousel JavaScript (You would typically use Flowbite or similar library)
+        const carousel = document.getElementById('default-carousel');
+        const carouselItems = carousel.querySelectorAll('[data-carousel-item]');
+        const carouselIndicators = carousel.querySelectorAll('[data-carousel-slide-to]');
+        const prevButton = carousel.querySelector('[data-carousel-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-next]');
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            carouselItems.forEach(item => item.classList.add('hidden'));
+            carouselIndicators.forEach(indicator => {
+                indicator.classList.remove('opacity-100');
+                indicator.classList.add('opacity-50');
+            });
+
+            carouselItems[index].classList.remove('hidden');
+            carouselIndicators[index].classList.remove('opacity-50');
+            carouselIndicators[index].classList.add('opacity-100');
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % carouselItems.length;
+            showSlide(currentSlide);
+        });
+
+        carouselIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
+</body>
+</html>
