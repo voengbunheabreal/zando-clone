@@ -1,1 +1,15 @@
 @import "tailwindcss";
+/* Add to your style.css file */
+.group:hover .group-hover\:visible {
+    visibility: visible;
+}
+
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+}
+
+/* Ensure the dropdown stays visible when hovering over it */
+.absolute:hover {
+    opacity: 1;
+    visibility: visible;
+}

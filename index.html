@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./asset/logo/zando-logo-small.png" type="image/x-icon">
-    <title>ZANDO - Responsive Navbar</title>
+    <title>ZAND0 UI CLONE</title>
 </head>
 <body class="overflow-x-hidden">
     <!-- Mobile Menu Overlay (Hidden by default) -->
@@ -21,7 +21,9 @@
             
             <!-- Mobile Navigation Links -->
             <ul class="space-y-4 mt-12 text-black font-medium">
-                <li><a href="#" class="block py-2 hover:text-red-600 transition">WOMEN</a></li>
+                <li class="group relative">
+                    <a href="#" class="block py-2 hover:text-red-600 transition">WOMEN</a>
+                </li>
                 <li><a href="#" class="block py-2 hover:text-red-600 transition">MEN</a></li>
                 <li><a href="#" class="block py-2 hover:text-red-600 transition">BOYS</a></li>
                 <li><a href="#" class="block py-2 hover:text-red-600 transition">GIRLS</a></li>
@@ -75,11 +77,346 @@
         </button>
         
         <!-- Navigation Links (hidden on mobile) -->
-        <ul class="hidden md:flex space-x-3 lg:space-x-5 text-black font-medium md:text-sm lg:text-base xl:text-lg">
-            <li><a href="#" class="hover:text-red-600 transition">WOMEN</a></li>
-            <li><a href="#" class="hover:text-red-600 transition">MEN</a></li>
-            <li><a href="#" class="hover:text-red-600 transition">BOYS</a></li>
-            <li><a href="#" class="hover:text-red-600 transition">GIRLS</a></li>
+        <ul class="hidden md:flex space-x-3 lg:space-x-5 text-black font-semibold md:text-sm lg:text-base xl:text-lg">
+            <li class="relative group">
+                <a href="#" class="hover:text-red-600 transition ">WOMEN</a>
+                <!-- Desktop Dropdown Content - Mega Menu -->
+                <div class="font-semibold absolute -left-full ml-8 top-full hidden group-hover:grid grid-cols-6 bg-white shadow-xl w-screen p-6 z-10 gap-6 rounded-md 
+                            opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 
+                            transition-all duration-300 ease-out origin-top">
+                    <!-- Column 1 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-100">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">New In</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Top</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Dress</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Bottom</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-150">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Clothing</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Tops</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Dresses</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blouses</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">T-Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Polo Shirt</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jackets</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jumpsuits</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Cardigans</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Trousers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blazers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Vest</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shirts</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-200">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Shoes</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sandals</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sneakers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Loafers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-250">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Accessories</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Bags</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Backpacks</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Belts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Caps & Hats</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Gloves</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Socks</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Underwear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Bras</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 5 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-300">
+                        <h3 class="font-semibold text-red text-lg mb-3 border-b pb-2">Shop by collection</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hanuman Collection</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">RECYCLED DENIM COLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">GRANDPRIXCOLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Clot with us</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportlife</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportswear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Lifestyle</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 6 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-350">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2 text-red-600">SALE</h3>
+                        <ul class="space-y-2 text-sm text-red-600">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All Sale Items</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Casual</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Denim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group">
+                <a href="#" class="hover:text-red-600 transition">MEN</a>
+                <!-- Desktop Dropdown Content - Mega Menu -->
+                <div class="font-semibold absolute -ml-32  top-full hidden group-hover:grid grid-cols-6 bg-white shadow-xl w-screen p-6 z-10 gap-6 rounded-md 
+                            opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 
+                            transition-all duration-300 ease-out origin-top">
+                    <!-- Column 1 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-100">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">New In</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Lifestyle</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportlife</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Casual</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Top</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Bottom</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-150">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Clothing</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blazers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Vest</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Polo Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">T-Shirts</T-Shirts></a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jackets</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Cardigain</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportswear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Trousers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jeans</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shorts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Boxers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-200">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Shoes</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sandals</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sneakers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-250">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Accessories</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Gloves</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Belts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Caps & Hats</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Socks</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Bags</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Backpacks</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 5 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-300">
+                        <h3 class="font-semiboldtext-lg mb-3 border-b pb-2">Shop by collection</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Denim</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hanuman Collaction</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">RECYCLED DENIM COLLACTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Adventure Series 2.0</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 6 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-350">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2 text-red-600">SALE</h3>
+                        <ul class="space-y-2 text-sm text-red-600">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All Sale Items</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Casual</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Denim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li><li class="relative group">
+                <a href="#" class="hover:text-red-600 transition">BOYS</a>
+                <!-- Desktop Dropdown Content - Mega Menu -->
+                <div class="font-semibold absolute -ml-48 top-full hidden group-hover:grid grid-cols-6 bg-white shadow-xl w-screen p-6 z-10 gap-6 rounded-md 
+                            opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 
+                            transition-all duration-300 ease-out origin-top">
+                    <!-- Column 1 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-100">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">New In</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Top</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Dress</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">New In Bottom</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-150">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Clothing</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Tops</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Dresses</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blouses</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">T-Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Polo Shirt</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jackets</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jumpsuits</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Cardigans</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Trousers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blazers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Vest</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shirts</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-200">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Shoes</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sandals</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sneakers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Loafers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-250">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Accessories</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Bags</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Backpacks</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Belts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Caps & Hats</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Gloves</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Socks</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Underwear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Bras</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 5 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-300">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Shop by collection</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hanuman Collection</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">RECYCLED DENIM COLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">GRANDPRIXCOLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Clot with us</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportlife</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportswear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Lifestyle</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 6 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-350">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">SALE</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All Sale Items</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Casual</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Denim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li><li class="relative group">
+                <a href="#" class="hover:text-red-600 transition ">GIRLS</a>
+                <!-- Desktop Dropdown Content - Mega Menu -->
+                <div class="font-semibold absolute -ml-64 top-full hidden  group-hover:grid grid-cols-6 bg-white shadow-xl w-screen p-6 z-10 gap-6 rounded-md 
+                            opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 
+                            transition-all duration-300 ease-out origin-top">
+                    <!-- Column 1 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-100">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">New In</h3>
+                        <ul class="space-y-2 text-sm">
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-150">
+                        <h3 class="font-semibold text-lg mb-3 border-b pb-2">Clothing</h3>
+                        <ul class="space-y-2 text-sm font-semibold">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Jeans</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Skirt</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">T-Shirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Trousers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Dresses</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Blouse</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Shorts</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-200">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Shoes</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sandals</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sneakers</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Loafers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-250">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Accessories</h3>
+                        <ul class="space-y-2 text-sm">
+                            
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 5 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-300">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">Shop by collection</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Hanuman Collection</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">RECYCLED DENIM COLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">GRANDPRIXCOLLECTION</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Clot with us</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportlife</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Sportswear</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Lifestyle</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 6 -->
+                    <div class="transform group-hover:translate-x-0 -translate-x-4 transition-transform duration-300 delay-350">
+                        <h3 class="font-bold text-lg mb-3 border-b pb-2">SALE</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">All Sale Items</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Casual</a></li>
+                            <li><a href="#" class="block py-1 hover:text-red-600 transition duration-200">Denim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
         </ul>
         
         <!-- Logo -->
@@ -151,127 +488,65 @@
             </div>
         </div>
     </nav>
-
-    <!-- Carousel Section -->
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-64 sm:h-80 md:h-96 lg:h-screen overflow-hidden">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./asset/slide-show/lifetsyle.w.png" class="absolute block w-full h-full object-cover" alt="Lifestyle">
-                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                    <div class="text-center text-white px-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Summer Collection</h2>
-                        <p class="text-sm sm:text-base md:text-lg mb-4">Discover our new arrivals</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./asset/slide-show/sportlife.m.png" class="absolute block w-full h-full object-cover" alt="Sport Life">
-                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                    <div class="text-center text-white px-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Sports Wear</h2>
-                        <p class="text-sm sm:text-base md:text-lg mb-4">Performance meets style</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./asset/slide-show/man.png" class="absolute block w-full h-full object-cover" alt="Men's Fashion">
-                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                    <div class="text-center text-white px-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Men's Collection</h2>
-                        <p class="text-sm sm:text-base md:text-lg mb-4">Trending this season</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
-                    </div>
+<!-- Carousel Section -->
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-64 sm:h-80 md:h-96 lg:h-screen overflow-hidden">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./asset/slide-show/lifetsyle.w.png" class="absolute block w-full h-full object-cover" alt="Lifestyle">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div class="text-center text-white px-4">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Summer Collection</h2>
+                    <p class="text-sm sm:text-base md:text-lg mb-4">Discover our new arrivals</p>
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
                 </div>
             </div>
         </div>
-        
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./asset/slide-show/sportlife.m.png" class="absolute block w-full h-full object-cover" alt="Sport Life">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div class="text-center text-white px-4">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Sports Wear</h2>
+                    <p class="text-sm sm:text-base md:text-lg mb-4">Performance meets style</p>
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
+                </div>
+            </div>
         </div>
-        
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-1/2 left-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-prev>
-            <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-        </button>
-        <button type="button" class="absolute top-1/2 right-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-next>
-            <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-        </button>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./asset/slide-show/man.png" class="absolute block w-full h-full object-cover" alt="Men's Fashion">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div class="text-center text-white px-4">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Men's Collection</h2>
+                    <p class="text-sm sm:text-base md:text-lg mb-4">Trending this season</p>
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const closeMobileMenu = document.getElementById('close-mobile-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuContent = document.getElementById('mobile-menu-content');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-            setTimeout(() => {
-                mobileMenuContent.classList.add('translate-x-0');
-            }, 10);
-        });
-
-        closeMobileMenu.addEventListener('click', () => {
-            mobileMenuContent.classList.remove('translate-x-0');
-            setTimeout(() => {
-                mobileMenu.classList.add('hidden');
-            }, 300);
-        });
-
-        // Carousel JavaScript (You would typically use Flowbite or similar library)
-        const carousel = document.getElementById('default-carousel');
-        const carouselItems = carousel.querySelectorAll('[data-carousel-item]');
-        const carouselIndicators = carousel.querySelectorAll('[data-carousel-slide-to]');
-        const prevButton = carousel.querySelector('[data-carousel-prev]');
-        const nextButton = carousel.querySelector('[data-carousel-next]');
-
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            carouselItems.forEach(item => item.classList.add('hidden'));
-            carouselIndicators.forEach(indicator => {
-                indicator.classList.remove('opacity-100');
-                indicator.classList.add('opacity-50');
-            });
-
-            carouselItems[index].classList.remove('hidden');
-            carouselIndicators[index].classList.remove('opacity-50');
-            carouselIndicators[index].classList.add('opacity-100');
-        }
-
-        prevButton.addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
-            showSlide(currentSlide);
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % carouselItems.length;
-            showSlide(currentSlide);
-        });
-
-        carouselIndicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
-        });
-
-        // Initialize first slide
-        showSlide(0);
-    </script>
+    
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-1/2 left-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-prev>
+        <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+        </svg>
+    </button>
+    <button type="button" class="absolute top-1/2 right-4 z-30 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full hover:bg-white/50 focus:outline-none" data-carousel-next>
+        <svg class="w-4 h-4 md:w-6 md:h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+    </button>
+  </div>
+  
+    <script src="main.js"></script>
 </body>
 </html>
