@@ -559,9 +559,22 @@
         
       </div>
     <!-- Content -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4" id="grid-container">
+    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4" id="grid-container">
       
     </div>    
+    <!-- payday -->
+     <div class="payday">
+        <div class="flex items-center justify-between py-4 px-4">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold">Payday Exclusive</h2>
+            <div class="flex items-center gap-2">
+                <span class="text-sm md:text-base lg:text-lg font-semibold">End In</span>
+                <div id="countdown" class="bg-red-600 text-white px-3 py-1 md:px-4 md:py-2 rounded-lg font-bold text-sm md:text-base lg:text-lg"></div>
+            </div>
+        </div>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="product-list">
+        <!-- JavaScript will inject product cards here -->
+    </div>
 </div>
    
     
@@ -569,5 +582,7 @@
     <script src="content.js"></script>
     <script src="branding.js"></script>
     <script src="payday_exclusive.js"></script>
+    <script src="countdown.js"></script>
+
 </body>
 </html>
