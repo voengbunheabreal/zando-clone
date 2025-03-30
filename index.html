@@ -6,6 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./asset/logo/zando-logo-small.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>ZAND0 UI CLONE</title>
 </head>
 <body class="overflow-x-hidden">
@@ -575,8 +576,172 @@
      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="product-list">
         <!-- JavaScript will inject product cards here -->
     </div>
+    <div class="footwear">
+        <div class="flex items-center justify-between py-4 px-4">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold">Footwear</h2>
+            <div class="flex items-center gap-2">
+                <button class="text-sm md:text-base lg:text-lg font-semibold">Shop More</button>
+            </div>
+        </div>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6" id="footwear-product-list"></div>
 </div>
-   
+  <!-- HTML for the enhanced scroll-to-top button -->
+<button id="scrollToTopBtn" class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-3 rounded-full shadow-lg opacity-0 transition-all duration-300 transform hover:scale-110">
+    <!-- Mouse scroll wheel icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="3" width="8" height="15" rx="4" ry="4" />
+      <line x1="12" y1="7" x2="12" y2="9" />
+    </svg>
+  </button>
+   <!-- Footer Section -->
+   <footer class="bg-gray-100 text-gray-800 pt-12 pb-6 mt-12 px-4 md:px-8">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
+            <!-- Zando Logo and App -->
+            <div class="mb-6 md:mb-0 hidden md:block">
+                <h2 class="text-2xl font-bold mb-4 md:text-xl">ZANDO APP</h2>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-gray-700 hover:text-gray-900">
+                        <img src="./branding/qr_code_app.png" alt="App Store" class=" h-auto w-32 ">
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Loyalty -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 md:flo">LOYALTY</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="hover:text-gray-600 flex items-center">
+                          <i class="fas fa-medal mr-2 text-green-500"></i>
+                          Membership & Benefits
+                        </a>
+                      </li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">FOLLOW US</h3>
+                <ul class="space-y-2">
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fab fa-facebook-f mr-3 text-blue-600 w-5 text-center"></i>
+                        Facebook
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fab fa-instagram mr-3 text-pink-600 w-5 text-center"></i>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fab fa-tiktok mr-3 text-black w-5 text-center"></i>
+                        TikTok
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fab fa-youtube mr-3 text-red-600 w-5 text-center"></i>
+                        YouTube
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+
+            <!-- Customer Services -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">CUSTOMER SERVICES</h3>
+                <ul class="space-y-2">
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fas fa-exchange-alt mr-3 text-blue-500 w-5 text-center"></i>
+                        Online exchange policy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fas fa-lock mr-3 text-green-500 w-5 text-center"></i>
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-gray-600 flex items-center">
+                        <i class="fas fa-question-circle mr-3 text-purple-500 w-5 text-center"></i>
+                        FAQs & guides
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="md:col-span-2 lg:col-span-1">
+                <h3 class="text-lg font-semibold mb-4">CONTACT US</h3>
+                <ul class="space-y-2">
+                    <ul class="space-y-3">
+                        <!-- Email with icon -->
+                        <li>
+                          <a href="mailto:info@zandokh.com" class="hover:text-gray-600 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            info@zandokh.com
+                          </a>
+                        </li>
+                      
+                        <!-- Phone 1 with icon -->
+                        <li>
+                          <a href="tel:+855081999716" class="hover:text-gray-600 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            (+855) 081 999 716
+                          </a>
+                        </li>
+                      
+                        <!-- Phone 2 with icon -->
+                        <li>
+                          <a href="tel:+855061330330" class="hover:text-gray-600 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            (+855) 061 330 330
+                          </a>
+                        </li>
+                      
+                        <!-- Telegram with icon -->
+                        <li>
+                            <a href="#" class="hover:text-gray-600 flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 2L11 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Telegram
+                            </a>
+                          </li>
+                      </ul>
+                </ul>
+            </div>
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">WE ACCEPT</h3>
+                <div class="flex flex-wrap gap-4">
+                    <img src="./branding/We-accept-payment–for-web-footer-1.png" alt="Visa" class="h-10">
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="developer w-screen text-center  h-auto py-4" >
+        <a href="https://t.me/bunheabvoeng" class="text-gray-800 font-semibold">Develop by: @voengbunheabreal</a>
+
+    </div>
+</footer>  
     
     <script src="main.js"></script>
     <script src="content.js"></script>

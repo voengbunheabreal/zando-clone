@@ -60,4 +60,68 @@
  showSlide(0);
 
 
- 
+ document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.remove('opacity-0');
+        scrollToTopBtn.classList.add('opacity-100');
+      } else {
+        scrollToTopBtn.classList.remove('opacity-100');
+        scrollToTopBtn.classList.add('opacity-0');
+      }
+    });
+    
+    // Add pulse effect on hover
+    scrollToTopBtn.addEventListener('mouseenter', function() {
+      this.classList.add('animate-pulse');
+    });
+    
+    scrollToTopBtn.addEventListener('mouseleave', function() {
+      this.classList.remove('animate-pulse');
+    });
+    
+    // Scroll to top when button is clicked
+    scrollToTopBtn.addEventListener('click', function() {
+      // Add click effect
+      this.classList.add('bg-green-500');
+      setTimeout(() => {
+        this.classList.remove('bg-green-500');
+      }, 300);
+      
+      // Smooth scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Add mouse wheel functionality
+    scrollToTopBtn.addEventListener('wheel', function(event) {
+      event.preventDefault();
+      
+      // Calculate scroll amount based on wheel delta
+      const scrollStep = event.deltaY > 0 ? 200 : -200;
+      
+      // Flash effect to indicate scroll direction
+      if (event.deltaY < 0) {
+        this.classList.add('bg-green-500');
+        setTimeout(() => {
+          this.classList.remove('bg-green-500');
+        }, 200);
+      } else {
+        this.classList.add('bg-red-500');
+        setTimeout(() => {
+          this.classList.remove('bg-red-500');
+        }, 200);
+      }
+      
+      // Perform scroll
+      window.scrollBy({
+        top: scrollStep,
+        behavior: 'smooth'
+      });
+    });
+  });
